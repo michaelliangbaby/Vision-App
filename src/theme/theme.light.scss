@@ -1,0 +1,23 @@
+.light-theme {
+  ion-content {
+    background-color: #f53d3d;
+
+  }
+
+  .toolbar-background {
+    background-color: #f53d3d;
+  }
+  $tabs-md-tab-text-color: grey;
+  $tabs-md-tab-text-color-active : #32db64;
+  $tabs-md-tab-icon-color : grey;
+  $tabs-md-tab-icon-color-active : #32db64;
+
+  //bgcolor
+  $list-border-color:grey;
+  $list-background-color:red;
+
+  $tabs-background:red;
+
+
+  $background-color:#f53d3d;
+}

@@ -7,14 +7,27 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
 
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/front/favicon.ico">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4e8ef7">
 
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+  <meta http-equiv="Content-Security-Policy" content="default-src *;img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;style-src  'self' 'unsafe-inline' *">
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD9rWwJXzDYUQHOrIayViJBOShoBClxU40",
+      authDomain: "my-project-1512514780906.firebaseapp.com",
+      databaseURL: "https://my-project-1512514780906.firebaseio.com",
+      projectId: "my-project-1512514780906",
+      storageBucket: "my-project-1512514780906.appspot.com",
+      messagingSenderId: "450510278516"
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 

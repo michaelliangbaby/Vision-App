@@ -11,7 +11,10 @@ $font-path: "../assets/fonts";
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
+@import "theme.light";
+@import "theme.dark";
+@import "icon";
+@import "ionic.build.dark";
 @import "ionic.globals";
 
 
@@ -34,11 +37,22 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary: #387ef5,
+  secondary: #32db64,
+  danger: #f53d3d,
+  light: #f4f4f4,
+  dark: #222,
+  favorite: #69BB7B,
+
+  twitter:(
+    base: #55acee,
+    contrast: #ffffff
+  ),
+
+  facebook:(
+    base: #38669f,
+    contrast: #ffffff
+  )
 );
 
 
@@ -54,7 +68,8 @@ $colors: (
 // Material Design only Sass variables can go here
 
 
-
+.ion-ios-myIcon:before { content: url("../assets/front/home-medical.svg");}
+.ion-ios-myIcon-outline:before { content: url("../assets/front/discovery1.svg"); }
 
 // App Windows Variables
 // --------------------------------------------------
